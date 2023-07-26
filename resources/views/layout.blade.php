@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Laravel - ItSolutionStuff.com</title>
+    <title>Laravel Task</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <style type="text/css">
         @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
@@ -70,15 +70,16 @@
                     </li>
                     @else
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('password.request') }}">Profile</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('logout') }}">Logout</a>
                     </li>
                     @endguest
                 </ul>
-
             </div>
         </div>
     </nav>
-
     @yield('content')
 
 </body>
